@@ -1,9 +1,9 @@
 ## Milchiever REST API docs
 
-#### Create Uesr/Get User's Data 
+#### 사용자 데이터 관련
 
 <details>
- <summary><code>POST</code> <code><b>/user</b></code> <code>(Create User)</code></summary>
+ <summary><code>POST</code> <code><b>/user</b></code> <code>(특정 사용자 생성)</code></summary>
 
 ##### Parameters
 
@@ -29,7 +29,7 @@
 </details>
 
 <details>
- <summary><code>GET</code> <code><b>/user/userid</b></code> <code>(Get User all Data)</code></summary>
+ <summary><code>GET</code> <code><b>/user/userid</b></code> <code>(특정 사용자의 모든 데이터를 가지고 옴)</code></summary>
 
 ##### Parameters
 
