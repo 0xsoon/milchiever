@@ -1,5 +1,5 @@
 ## Milchiever REST API docs
-
+- Base url : http://armydata-oovsq.run.goorm.io/
 #### 사용자 데이터 관련
 
 <details>
