@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Logo from "./goals.png"
+import Logo from "../images/goals.png"
 
 function Introduce() {
 	return (
@@ -22,11 +22,11 @@ function Notice() {
 
  function Login() {
 	return (
-		<div className="bg-slate-100 pb-12 flex flex-col items-center">
+		<div className="overflow-auto md:max-w-xl mx-auto bg-gray-100 h-screen flex flex-col items-center">
 			<div className="p-5 pt-16 w-11/12 xl:max-w-screen-xl flex justify-center">
 			  <header className="flex items-center space-x-2">
 				<img className="h-12 w-12" src={Logo} alt="ChitChat Logo" />
-				<h1 className="text-4xl font-medium text-black">milichiever</h1>
+				<h1 className="text-4xl font-bold text-black">milchiever</h1>
 			  </header>
 			</div>
 			<form action="https://fastapi-iedjz.run.goorm.site/api/user/login" method="post" className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">

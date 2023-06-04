@@ -1,6 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run development react app
+Make sure that you are using node v16.20.0
+```
+npx tailwindcss -i ./src/styles/global.css -o ./src/styles/tailwind.css --watch
+npm install
+npm start
+```
 
 ## Available Scripts
 
