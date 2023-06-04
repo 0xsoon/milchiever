@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './login';
-import "./dist/output.css"
+import Layout from './components/Layout';
+import Home from './pages/Home';
+
+import "./styles/tailwind.css";
+
 function App() {
   return (
-    <div className="App">
-		<Login></Login>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
