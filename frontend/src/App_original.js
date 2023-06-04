@@ -1,5 +1,5 @@
 import './App.css';
-import "./tailwind.css"
+import "./output.css"
 import React from 'react'
 function App() {
   return (
