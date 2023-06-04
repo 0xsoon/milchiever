@@ -29,7 +29,7 @@ function Notice() {
 				<h1 className="text-4xl font-medium text-black">milichiever</h1>
 			  </header>
 			</div>
-			<form action="#" className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">
+			<form action="https://fastapi-iedjz.run.goorm.site/api/user/login" method="post" className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">
 				<input type="text" placeholder="군번" className="w-11/12 mt-7 px-5 mb-3 xl:max-w-screen-xl h-16 rounded-lg bg-neutral-200" />
 				<input type="password" placeholder="비밀번호" className="w-11/12 xl:max-w-screen-xl mb-5 px-5 h-16 rounded-lg bg-neutral-200" />
 				<input type="submit" value="로그인" className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-sky-600 mb-3 text-white font-bold" />
