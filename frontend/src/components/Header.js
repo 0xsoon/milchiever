@@ -4,7 +4,7 @@ import Gear from '../images/gear.png';
 
 function Header(){
     return (
-        <div class="p-3 flex h-[6.5%]">
+        <div class="px-7 py-3 flex h-[6.5%]">
             <div class="flex w-1/2 text-left items-center">
                 <img className="h-[33px] w-[33px] mr-1.5" src={Logo} alt="Milchiever Logo" />
                 <h1 className="text-[23px] font-bold text-black">milchiever</h1>
