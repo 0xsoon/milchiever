@@ -23,7 +23,7 @@ function Notice() {
  function Login() {
 	return (
 		<div className="overflow-auto md:max-w-xl mx-auto bg-gray-100 h-screen flex flex-col items-center">
-			<div className="p-5 pt-16 w-11/12 xl:max-w-screen-xl flex justify-center">
+			<div className="p-5 pt-16 w-11/12 flex justify-center">
 			  <header className="flex items-center space-x-2">
 				<img className="h-12 w-12" src={Logo} alt="ChitChat Logo" />
 				<h1 className="text-4xl font-bold text-black">milchiever</h1>
