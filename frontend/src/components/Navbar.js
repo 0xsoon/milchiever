@@ -32,7 +32,7 @@ const navbarOptions = [
 
 function Navbar(){
     return (
-        <nav class="fixed inset-x-0 bottom-0 h-[6.5%] px-3 pb-5 pt-2 flex justify-evenly md:max-w-xl md:mx-auto">
+        <nav class="h-[6.5%] px-3 pb-5 pt-2 flex justify-evenly md:max-w-xl md:mx-auto">
             {
                 navbarOptions.map(option => {
                     return (
