@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+pnp.js
 
 # testing
 /coverage
@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # npm
-/package-lock.json
+package-lock.json
 
 # styles
-/src/styles/tailwind.css
+src/styles/tailwind.css

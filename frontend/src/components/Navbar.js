@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HomeLogo from '../images/home.png';
 import CalendarLogo from '../images/calendar.png';
 import AddGoalsLogo from '../images/more.png';
-import GoalsLogo from '../images/clipboard.png';
+import GoalListLogo from '../images/clipboard.png';
 import DiaryLogo from '../images/diary.png';
 
 const navbarOptions = [
@@ -17,12 +17,12 @@ const navbarOptions = [
         logo: CalendarLogo
     },
     {
-        name: 'AddGoals',
+        name: 'Goals',
         logo: AddGoalsLogo
     },
     {
-        name: 'Goals',
-        logo: GoalsLogo
+        name: 'GoalList',
+        logo: GoalListLogo
     },
     {
         name: 'Diary',
