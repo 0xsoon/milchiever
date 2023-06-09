@@ -8,7 +8,7 @@ function Layout(){
     return (
         <div class="md:max-w-xl mx-auto bg-gray-100 h-full">
             <Header />
-            <div class="h-[87%] p-3 py-2">
+            <div class="h-[87%] p-4 py-4">
                 <Outlet />
             </div>
             <Navbar />
