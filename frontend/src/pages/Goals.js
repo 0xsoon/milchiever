@@ -38,7 +38,7 @@ function Goals(){
                 <div class="grow">
                     <div class="float-right">
                         <div class="text-center hover:cursor-pointer">
-                            <img src={GoalLogo} class="inline-block w-6 h-6 mr-1"></img>
+                            <img src={GoalLogo} class="inline-block w-6 h-6 mr-1" alt="Goal Logo"></img>
                             <span class="text-base align-middle">자격증</span>
                         </div>
                         <div class="bg-blue-500 mt-2 py-1 px-2 rounded-md hover:bg-blue-300">
