@@ -29,18 +29,18 @@ function Notice() {
 }
 
  function Signin() {
-	const [state, setState] = useState({
+	const [userData, setUserData] = useState({
 		username : '',
 		password : '',
 	});
 	const onChange = (e) => {
-		setState({
-			...state,
+		setUserData({
+			...userData,
 			[e.target.name] : e.target.value
 		});
 	};
 	 
-	function sendForm(state) {
+	function sendSigninReq(state) {
 		Axios.post('https://fastapi-iedjz.run.goorm.site/user/login', qs.stringify({
 			username: state.username,
 			password: state.password,
@@ -50,7 +50,6 @@ function Notice() {
 				}
 		}).then((res)=>{
 			cookies.set('access_token', res.data["access_token"])
-			console.log(cookies);
 		}).catch((err)=>console.log(err));
 	}
 
@@ -66,7 +65,7 @@ function Notice() {
 			<form  className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">
 				<input name='username' onChange={onChange} type="text" placeholder="아이디" className="w-11/12 mt-7 px-5 mb-3 xl:max-w-screen-xl h-16 rounded-lg bg-neutral-200" />
 				<input name='password' onChange={onChange} type="password" placeholder="비밀번호" className="w-11/12 xl:max-w-screen-xl mb-5 px-5 h-16 rounded-lg bg-neutral-200" />
-				<input type="button" value="로그인" onClick={()=>sendForm(state)} className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-sky-600 mb-3 text-white font-bold" />
+				<input type="button" value="로그인" onClick={()=>sendSigninReq(userData)} className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-sky-600 mb-3 text-white font-bold" />
 				<input type="button" value="회원가입"  className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-green-600 mb-10 text-white font-bold" />
 			</form>		
 			<Introduce></Introduce>
