@@ -1,19 +1,9 @@
 import React, { useState } from 'react';
 import { getCookie } from './Signin'
 import Axios from 'axios'
-import profile from '../images/profile.gif';
-function Profile(props) {
-	return (
-		<div className="flex flex-col bg-white items-center rounded-lg">
-			<div className="flex p-6">
-			<img className="w-1/4" src={profile} alt="profile" />
-			<div className="text-2xl">{props.name}</div>
-			<div className="block">입대일 : {props.enlist}</div>
-			<div className="">전역일 : {props.discharge}</div>
-			</div>
-		</div>
-	)
-}
+import Profile from '../components/Profile'
+
+
 
 function Home(){
 
@@ -30,7 +20,6 @@ function Home(){
 					'Authorization': `Bearer ${getCookie('access_token')}`,
 				},
 		}).then((res)=>{
-			console.log(res);
 			setName(res.data["name"]);
 			setEnlist(res.data["enlistDay"]);
 			setDischarge(res.data["dischargeDay"]);

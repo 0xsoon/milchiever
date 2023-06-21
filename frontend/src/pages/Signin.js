@@ -41,7 +41,7 @@ function Notice() {
 	};
 	 
 	function sendSigninReq(state) {
-		Axios.post('https://fastapi-iedjz.run.goorm.site/user/login', qs.stringify({
+		Axios.post('https://fastapi-iedjz.run.goorm.site/user/signin', qs.stringify({
 			username: state.username,
 			password: state.password,
 			}), {
@@ -62,10 +62,10 @@ function Notice() {
 				<h1 className="text-4xl font-bold text-black">milchiever</h1>
 			  </header>
 			</div>
-			<form  className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">
+			<form onSubmit={sendSigninReq(userData)} className="flex flex-col items-center w-11/12 mt-3 bg-white rounded-lg xl:max-w-screen-xl">
 				<input name='username' onChange={onChange} type="text" placeholder="아이디" className="w-11/12 mt-7 px-5 mb-3 xl:max-w-screen-xl h-16 rounded-lg bg-neutral-200" />
 				<input name='password' onChange={onChange} type="password" placeholder="비밀번호" className="w-11/12 xl:max-w-screen-xl mb-5 px-5 h-16 rounded-lg bg-neutral-200" />
-				<input type="button" value="로그인" onClick={()=>sendSigninReq(userData)} className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-sky-600 mb-3 text-white font-bold" />
+				<input type="button" value="로그인" className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-sky-600 mb-3 text-white font-bold" />
 				<input type="button" value="회원가입"  className="w-11/12 xl:max-w-screen-xl h-14 rounded-lg bg-green-600 mb-10 text-white font-bold" />
 			</form>		
 			<Introduce></Introduce>
