@@ -20,7 +20,6 @@ function Home(){
 					'Authorization': `Bearer ${getCookie('access_token')}`,
 				},
 		}).then((res)=>{
-			console.log(res);
 			setName(res.data["name"]);
 			setEnlist(res.data["enlistDay"]);
 			setDischarge(res.data["dischargeDay"]);

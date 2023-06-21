@@ -31,7 +31,7 @@ function Profile(props) {
 					<div className="text-2xl">D - {dDay}</div>
 				</div>
 			</div>
-			<Progressbar total={totalDay} now={totalDay - dDay}></Progressbar>
+			<Progressbar total={totalDay} now={totalDay - dDay} />
 		</div>
 	)
 }
