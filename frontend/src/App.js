@@ -6,7 +6,7 @@ import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
 import Goals from './pages/Goals';
-
+import Setting from './pages/Setting';
 import "./styles/tailwind.css";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
 		  <Routes>
 			<Route path="/signin" element={<Signin />}/>
 			<Route path="/signup" element={<Signup />}/>
+			<Route path="/setting" element={<Setting />}/>
 			<Route path="/" element={<Layout />} >
 			  <Route index path="home" element={<Home />} />
 			  <Route path="goals" element={<Goals />} />
