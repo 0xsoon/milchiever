@@ -1,0 +1,6 @@
+.venv
+/__pycache__
+/.venv
+/domain/__pycache__
+/domain/schedule/__pycache__
+/domain/user/__pycache__
